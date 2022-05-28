@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/team5/pokec_graph/src/main/scala/jobs/SocialGraphJob.scala:18:92: value _2 is not a member of org.apache.spark.graphx.VertexId[0m
+[0m[[0m[31merror[0m] [0m[0m    graph.getMostInConnectedUsers(10) foreach (f => println(s"Id: ${f._1} InfoUser: ${f._1._2} NumOfInDegrees: ${f._1._1}"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/team5/pokec_graph/src/main/scala/jobs/SocialGraphJob.scala:18:119: value _1 is not a member of org.apache.spark.graphx.VertexId[0m
+[0m[[0m[31merror[0m] [0m[0m    graph.getMostInConnectedUsers(10) foreach (f => println(s"Id: ${f._1} InfoUser: ${f._1._2} NumOfInDegrees: ${f._1._1}"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

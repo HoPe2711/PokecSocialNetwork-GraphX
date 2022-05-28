@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/team5/pokec_graph/target/scala-2.12/pokec-spark-graphx_2.12-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph/InputDataFlow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph/InputDataFlow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph/package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph/package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph/package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph/package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph/InputDataFlow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph/InputDataFlow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	graph/SocialGraph.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/graph/SocialGraph.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	jobs[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/jobs[0m
+[0m[[0m[0mdebug[0m] [0m[0m	jobs/SocialGraphJob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/jobs/SocialGraphJob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	jobs/SocialPageRankJob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/jobs/SocialPageRankJob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	jobs/SocialGraphJob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/jobs/SocialGraphJob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	jobs/SocialPageRankJob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/team5/pokec_graph/target/scala-2.12/classes/jobs/SocialPageRankJob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
