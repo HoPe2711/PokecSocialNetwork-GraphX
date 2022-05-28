@@ -15,9 +15,7 @@ object SocialPageRankJob {
     socialGraph.graph.staticPageRank(numIter = 20).vertices
 
   def handleResult(socialGraph: SocialGraph, ranks: VertexRDD[Double]) = {
-    socialGraph.verts.join(ranks).map {
-      case (_, (username, rank)) => (username, rank)
-    }.sortBy({ case (_, rank) => rank }, ascending = false).take(10)
+    socialGraph.verts.join(ranks).sortBy({ case (_, rank) => rank }, ascending = false).take(10)
   }
 
   def main(args: Array[String]): Unit = {
@@ -28,14 +26,17 @@ object SocialPageRankJob {
     val socialGraph: SocialGraph = new SocialGraph(sc)
     val TOLERANCE: Double = 0.0001
 
-    import scala.compat.Platform.{EOL => D}
-    val topUsersDynamically = handleResult(socialGraph, ranks(socialGraph, TOLERANCE)).mkString(D)
-    val topUsersIterative = handleResult(socialGraph, static(socialGraph, TOLERANCE)).mkString(D)
+    val topUsersDynamically = handleResult(socialGraph, ranks(socialGraph, TOLERANCE))
+    val topUsersIterative = handleResult(socialGraph, static(socialGraph, TOLERANCE))
 
+    println("") 
     println(s"Top 10 users in network counted with TOLERANCE until convergence $TOLERANCE:")
-    println(s"$topUsersDynamically")
+    topUsersDynamically foreach (f => println(s"Id: ${f._1} \tRank: ${f._2._2}"))
+    
+    println("") 
     println(s"Top 10 users in the network counted iteratively:")
-    println(s"$topUsersIterative")
+    topUsersIterative foreach (f => println(s"Id: ${f._1} \tStatic: ${f._2._2}"))
+
     sc.stop()
   }
 }

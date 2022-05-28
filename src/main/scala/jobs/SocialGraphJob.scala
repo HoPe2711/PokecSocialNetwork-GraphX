@@ -39,7 +39,7 @@ object SocialGraphJob {
 
     println("")
     println("Number of triangles passing through each vertex:")
-    graph.socialTriangleCount foreach (f => println(s"Id: ${f._1} \tNum Of Out Triangles: ${f._2._2} \tInfo User: ${f._2._1}"))
+    graph.socialTriangleCount foreach (f => println(s"Id: ${f._1} \tNum Of Triangles: ${f._2._2} \tInfo User: ${f._2._1}"))
 
     println("")
     print("Number of triangles: ")
