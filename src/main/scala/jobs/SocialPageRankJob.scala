@@ -15,7 +15,7 @@ object SocialPageRankJob {
     socialGraph.graph.staticPageRank(numIter = 20).vertices
 
   def handleResult(socialGraph: SocialGraph, ranks: VertexRDD[Double]) = {
-    socialGraph.verts.join(ranks).sortBy({ case (_, rank) => rank }, ascending = false).take(10)
+    socialGraph.verts.join(ranks).sortBy({ case (_, (username, rank)) => rank }, ascending = false).take(10)
   }
 
   def main(args: Array[String]): Unit = {
